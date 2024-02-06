@@ -1,0 +1,503 @@
+/* =========================== */
+/* BASIC SETUP */
+/* =========================== */
+
+*{
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  
+}
+
+
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body{
+  font-family: 'Titillium Web', sans-serif;
+
+}
+a{
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+h1{
+  font-size: 3.2rem;
+  line-height: 4.5rem;
+}
+h2{
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  margin-bottom: 2rem;
+}
+h2::after{
+  content: '';
+  display: block;
+  height: .4rem;
+  width: 8.5rem;
+  margin: auto;
+  margin-top: 2rem;
+  background-color: #c8d9e579;
+}
+
+h3{
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+}
+p{
+  font-size: 1.8rem;
+}
+span{
+  font-size: 1.3rem;
+}
+.clearfix::after{
+  content: '';
+  display: table;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+
+/* =========================== */
+/* REEUSABLE COMPONENTS */
+/* =========================== */
+
+.row{
+  max-width: 114rem;
+  margin: 0 auto;
+}
+
+ul li{
+  list-style: none;
+}
+
+.btn:link, .btn:visited,
+.btn{
+  background-color: #eb7d4b;
+  border-bottom: .3rem solid #c86a40;
+  color: #fff;
+  padding: 1.5rem 6rem;
+  text-decoration: none;
+  border-radius: .5rem;
+  display: inline-block;
+}
+
+/* =========================== */
+/* HEADER SECTION */
+/* =========================== */
+
+header{
+  background: -webkit-gradient(linear ,right top, left top ,from(rgba(135, 80, 155, 0.9)),to(rgba(135, 80, 155, 0.9))), url(../img/background/background06.jpg);
+  background: linear-gradient(to left ,rgba(135, 80, 155, 0.9),rgba(135, 80, 155, 0.9)), url(../img/background/background06.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+header .nav{
+  height: 10rem;
+  background-color: rgba(1, 1, 1, 0.5);
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+
+}
+
+.logo{
+  line-height: 12rem;
+  float: left;
+  position: absolute;
+  z-index: 3;
+}
+
+.main-menu{
+  float: right;
+}
+
+.main-menu ul li {
+  width: 12rem;
+  height: 10rem;
+  line-height: 10rem;
+  float: left;
+  text-align: center;
+}
+
+.main-menu ul li a{
+  padding: 1rem 1.5rem;
+  color: #fff;
+  border-radius: .5rem;
+}
+
+.main-menu ul li a:hover{
+  background-color: #643a79;
+}
+
+.activ{
+  background-color: #643a79;
+}
+.mobile-menu{
+  float: right;
+  display: none;
+}
+.mobile-menu i{
+  font-size: 3.2rem;
+  margin-top: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+/* hero-text-box */
+
+.hero-text-box{
+  position: absolute;
+  width: 70%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.hero-text-box h1{
+ margin-bottom: 5rem;
+}
+
+/* =========================== */
+/* SERVICE SECTION */
+/* =========================== */
+
+.service-section{
+  padding: 7rem 0;
+  text-align: center;
+  background: -webkit-gradient(linear ,right top, left top ,from(rgba(23, 194, 163, 0.9)),to(rgba(23, 194, 163, 0.9))), url(../img/background/background04.jpg);
+  background: linear-gradient(to left ,rgba(23, 194, 163, 0.9),rgba(23, 194, 163, 0.9)), url(../img/background/background04.jpg);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.service-section,.service-section h2,.service-section h3{
+  color: #fff;
+}
+
+.service-section-top-text{
+  width: 50%;
+  margin: auto;
+  padding: 1rem;
+}
+.box img{
+  margin: 6rem 0;
+  max-height: 120px;
+  max-width: 150px;
+}
+.box p{
+  padding: 2rem;
+}
+
+/* =========================== */
+/* TEM SECTION */
+/* =========================== */
+
+.tem-section{
+  text-align: center;
+  padding: 7rem 0;
+   background: -webkit-gradient(linear ,right top, left top ,from(rgba(231, 241, 248, 0.9)),to(rgba(231, 241, 248, 0.9))), url(../img/background/tim.jpg);
+   background: linear-gradient(to left ,rgba(231, 241, 248, 0.9),rgba(231, 241, 248, 0.9)), url(../img/background/tim.jpg);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.tem-section .box h3{
+  padding: 1rem 0;
+}
+.box span{
+  color: #30bae7;
+}
+.box .face{
+  max-width: 150px;
+  max-height: 150px;
+  margin:6rem 0 3rem 0;
+  border-radius: 50%;
+}
+.media-section a{
+display: inline-block;
+ color: #fff;
+}
+.media-section a i{
+  background-color: #bdd1df;
+  height: 3rem;
+  width: 3rem;
+  margin: 0 .3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 50%;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+.media-section a:hover i.fa{
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+  color: #040505;
+}
+
+
+/* =========================== */
+/* SKLE SECTION */
+/* =========================== */
+.skle-section p{
+  padding-bottom: 7rem;
+}
+  .skle-section{
+    background: -webkit-gradient(linear ,right top, left top ,from(rgba(255, 255, 255, 0.9)),to(rgba(255, 255, 255, 0.9))), url(../img/background/digital-marketing-g5a55f9829_1280.jpg);
+    background: linear-gradient(to left ,rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)), url(../img/background/digital-marketing-g5a55f9829_1280.jpg);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+/* =========================== */
+/* SKLE SECTION */
+/* =========================== */
+
+/* atart animated circle */
+svg.radial-progress {
+  height: auto;
+  max-width: 200px;
+  padding: 1em;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  width: 100%;
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+}
+
+svg.radial-progress circle {
+  fill: rgba(0,0,0,0);
+  stroke: #fff;
+  stroke-dashoffset: 219.91148575129; 
+  stroke-width: 10;
+}
+
+svg.radial-progress circle.incomplete { opacity: 0.25; }
+
+svg.radial-progress circle.complete { stroke-dasharray: 219.91148575129; }
+
+svg.radial-progress text {
+  fill: #fff;
+  text-anchor: middle;
+}
+/* end animated circle */
+
+.portfolio-section{
+  background-color: #ffdd99;
+}
+/* progress */
+
+svg.radial-progress circle{
+  stroke-width: 5;
+}
+svg.web-desigen circle{
+  stroke: #30bae7;
+}
+svg.html-css circle{
+  stroke: #d74680;
+}
+svg.graphic circle{
+  stroke: #15c7a8;
+}
+svg.ui-ux circle{
+  stroke: #eb7d4b;
+}
+svg.radial-progress text{
+  fill: #040505;
+}
+
+/* =========================== */
+/* PORTFOLIO */
+/* =========================== */
+
+.portfolio-section{
+    background: -webkit-gradient(linear ,right top, left top ,from(rgba(255, 210, 153, 0.9)),to(rgba(255, 210, 153, 0.9))), url(../img/background/laptop-g4099c5339_1280.jpg);
+    background: linear-gradient(to left ,rgba(255, 210, 153, 0.9),rgba(255, 210, 153, 0.9)), url(../img/background/laptop-g4099c5339_1280.jpg);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.selection-menu{
+  margin: 4rem 0;
+}
+.selection-menu ul li{
+  height: 5rem;
+  width: 7rem;
+  display: inline-block;
+}
+.selection-menu ul li a{
+  padding: .5rem 1rem;
+  background-color: #ebc985;
+  border-radius: .5rem;
+}
+.selection-menu ul li a:hover{
+  background-color: #ffffff;
+}
+.selection-menu .portfolio-activ{
+  background-color: #ffffff;
+}
+
+.laptop{
+  width: 80%;
+}
+.portfolio-section .row p{
+  margin: 0 0 4rem 0;
+
+}
+.portfolio-section .row .col .laptop ~ p{
+  margin: 4rem 0;
+
+}
+.portfolio-section 
+.btn{
+  background-color: #17c2a4;
+  border-color: #14a58c;
+}
+
+/* =========================== */
+/* ABOUT_US*/
+/* =========================== */
+
+.about-us {
+   background: -webkit-gradient(linear ,right top, left top ,from(rgba(215, 70, 128, 0.9)),to(rgba(215, 70, 128, 0.9))), url(../img/background/background03.jpg);
+   background: linear-gradient(to left ,rgba(215, 70, 128, 0.9),rgba(215, 70, 128, 0.9)), url(../img/background/background03.jpg);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.about-us,.about-us h2,.about-us h3{
+  color: #fff;
+
+}
+.about-us .box img {
+    margin:  2rem 0;
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+}
+.about-us .box{
+  height: 100%;
+  padding: 3rem;
+}
+.about-text{
+  text-align: left;
+}
+.about-text p{
+  padding: 1.5rem 0 .5rem 0;
+}
+
+/* =========================== */
+/* TOUCH */
+/* =========================== */
+
+.contact-section{
+  text-align: center;
+  background: -webkit-gradient(linear ,right top, left top ,from(rgba(60, 84, 153, 0.9)),to(rgba(60, 84, 153, 0.9))), url(../img/background/journal-g4097b291a_1280.jpg);
+  background: linear-gradient(to left ,rgba(60, 84, 153, 0.9),rgba(60, 84, 153, 0.9)), url(../img/background/journal-g4097b291a_1280.jpg);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 0;
+}
+.contact-section,.contact-section h2,.contact-section p{
+  color: #fff;
+}
+.contact-section form{
+  width: 60%;
+  margin:  5rem auto 0;
+}
+.contact-section #contact-input{
+  background-color: #273a71;
+  border: 1rem #273a71;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.8rem;
+  margin: .5rem 0;
+  border-radius: .5rem;
+}
+.contact-section #contact-input::-webkit-input-placeholder{
+  color: #fff;
+  opacity: 1;
+}
+.contact-section #contact-input::-moz-placeholder{
+  color: #fff;
+  opacity: 1;
+}
+.contact-section #contact-input:-ms-input-placeholder{
+  color: #fff;
+  opacity: 1;
+}
+.contact-section #contact-input::-ms-input-placeholder{
+  color: #fff;
+  opacity: 1;
+}
+.contact-section #contact-input::-webkit-input-placeholder{
+  color: #fff;
+  opacity: 1;
+}
+.contact-section #contact-input:-ms-input-placeholder{
+  color: #fff;
+  opacity: 1;
+}
+.contact-section #contact-input::placeholder{
+  color: #fff;
+  opacity: 1;
+}
+.contact-section .btn-submit{
+  border: 0;
+  font-size: 1.4rem;
+  border-bottom: .3rm solid #299ec5;
+  background-color: #30bae7;
+  margin: 3rem 0;
+}
+
+/* =========================== */
+/* REEUSABLE COMPONENTS */
+/* =========================== */
+
+.footer{
+  width: 100%;
+  background-color: #344b8e;
+}
+.footer ul {
+width: 90%;
+  margin: auto;
+}
+.footer ul li{
+  width: 14rem;
+  display: inline-block;
+  text-align: center;
+  line-height: 10rem;
+  list-style: none;
+}
+.footer ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+.footer ul li a:hover{
+   color: #30bae7;
+}
+
+
+
